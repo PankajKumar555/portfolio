@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
+import "./styles/project.css";
+import { useNavigate } from "react-router-dom";
 
-const cardWidth = 320;
+const cardWidth = 350;
 const borderRadius = 8;
 const transition = "all 0.45s ease";
 
@@ -69,7 +71,7 @@ const BottomBar = styled.span`
 const Style = styled.button`
 	position: relative;
 	flex-shrink: 0;
-	width: ${cardWidth}px;
+	max-width: ${cardWidth}px;
 	text-align: left;
 	background: #ffffff;
 	border-radius: ${borderRadius}px;
@@ -77,6 +79,9 @@ const Style = styled.button`
 	box-shadow: 0 2px 20px rgba(0, 0, 0, 0.12),
 		0 20px 20px -10px rgba(0, 0, 0, 0.125);
 	transition: ${transition};
+	padding: 0px;
+	border: none;
+	margin: 0.5rem auto;
 
 	&:hover {
 		transform: scale(1.04);
@@ -111,21 +116,27 @@ const Style = styled.button`
 	}
 `;
 
-const Card = ({ hexa, title, description, image, linkText }) => (
-	<Style>
-		<Screenshot image={image} />
-		<Content>
-			<Title>{title}</Title>
-			<Description>{description}</Description>
-			<BottomBar background={hexa} />
-			<div className="project-link">
-				<div className="project-link-icon">
-					<FontAwesomeIcon icon={faLink} />
+const Card = ({ hexa, title, description, image, linkText }) => {
+	const navigate = useNavigate();
+	return (
+		<Style>
+			<Screenshot image={image} />
+			<Content>
+				<Title>{title}</Title>
+				<Description>{description}</Description>
+				<BottomBar background={hexa} />
+				<div
+					className="project-link"
+					onClick={() => navigate("/projects")}
+				>
+					<div className="project-link-icon">
+						<FontAwesomeIcon icon={faLink} />
+					</div>
+					<div className="project-link-text">{linkText}</div>
 				</div>
-				<div className="project-link-text">{linkText}</div>
-			</div>
-		</Content>
-	</Style>
-);
+			</Content>
+		</Style>
+	);
+};
 
 export default Card;

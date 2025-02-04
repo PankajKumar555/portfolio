@@ -7,11 +7,16 @@ import Card from "./Card";
 const Project = (props) => {
 	const { logo, title, description, linkText, link } = props;
 
+	const generateColor = (index) => {
+		const hue = (index * 137) % 360; // Multiply index by a prime number to spread hues
+		return `hsl(${hue}, 70%, 50%)`; // Use HSL for vibrant, unique colors
+	};
+
 	return (
 		<React.Fragment>
-			<div className="">
-				<Link to={link}>
-					{/* <div className="project-container">
+			{/* <div className=""> */}
+			<Link to={link}>
+				{/* <div className="project-container">
 						<div className="project-logo">
 							<img src={logo} alt="logo" />
 						</div>
@@ -25,15 +30,15 @@ const Project = (props) => {
 							<div className="project-link-text">{linkText}</div>
 						</div>
 					</div> */}
-					<Card
-						hexa={"#FF0000"}
-						title={title}
-						description={description}
-						image={logo}
-						linkText={linkText}
-					/>
-				</Link>
-			</div>
+				<Card
+					hexa={generateColor(2)} // Dynamically generate a unique color
+					title={title}
+					description={description}
+					image={logo}
+					linkText={linkText}
+				/>
+			</Link>
+			{/* </div> */}
 		</React.Fragment>
 	);
 };

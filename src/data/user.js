@@ -7,12 +7,11 @@ const INFO = {
 	},
 
 	socials: {
-		twitter: "https://twitter.com/",
+		faFreeCodeCamp: "https://www.freecodecamp.org/",
 		github: "https://github.com/",
 		linkedin: "https://linkedin.com/",
 		instagram: "https://instagram.com/",
-		stackoverflow: "https://stackoverflow.com/",
-		facebook: "https://facebook.com/",
+		mobile: "8384064378",
 	},
 
 	homepage: {
