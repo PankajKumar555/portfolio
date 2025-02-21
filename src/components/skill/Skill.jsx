@@ -26,6 +26,7 @@ const SkillsSection = () => {
 			>
 				What I do
 			</Typography>
+			<br />
 			<Grid container spacing={3} justifyContent="center">
 				{skills?.map((skill, index) => (
 					<Grid item xs={6} sm={4} md={3} lg={2} key={index}>

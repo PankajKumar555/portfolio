@@ -8,6 +8,7 @@ import { educationDetails } from "../data/education";
 import EducationCard from "./educationCard";
 import { Grid } from "@mui/material";
 import "./styles/readArticle.css";
+import { UpIcon } from "../components/common/upIcon";
 
 const Education = () => {
 	// const article = myArticles[slug - 1];
@@ -55,6 +56,7 @@ const Education = () => {
 					</div>
 				</div>
 			</div>
+			<UpIcon />
 		</React.Fragment>
 	);
 };

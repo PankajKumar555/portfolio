@@ -9,11 +9,21 @@ import { Box, Divider, Typography } from "@mui/material";
 const Works = () => {
 	return (
 		<div className="works">
+			<Typography
+				variant="h3"
+				sx={{
+					fontWeight: "bold",
+					marginBottom: "20px",
+					textAlign: "center",
+				}}
+			>
+				Work Experience
+			</Typography>
 			<Card
-				icon={faBriefcase}
-				title="Work"
+				// icon={faBriefcase}
+				// title="Work"
 				body={
-					<div className="works-body">
+					<div className="works-body" style={{ paddingTop: "0px" }}>
 						<div className="works-body-box">
 							<div className="work">
 								<img
@@ -31,7 +41,7 @@ const Works = () => {
 							</div>
 							<div
 								style={{
-									color: "#acacb4",
+									color: "#67676a",
 									marginTop: "1.5rem",
 									fontSize: "14px",
 								}}
@@ -111,7 +121,7 @@ const Works = () => {
 							</div>
 							<div
 								style={{
-									color: "#acacb4",
+									color: "#67676a",
 									marginTop: "1.5rem",
 									fontSize: "14px",
 								}}
@@ -194,7 +204,7 @@ const Works = () => {
 							</div>
 							<div
 								style={{
-									color: "#acacb4",
+									color: "#67676a",
 									marginTop: "1.5rem",
 									fontSize: "14px",
 								}}

@@ -17,6 +17,8 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 import SkillsSection from "../components/skill/Skill";
 import "./styles/homepage.css";
+import HomeProjects from "../components/projects/HomeProjects";
+import { UpIcon } from "../components/common/upIcon";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -162,7 +164,7 @@ const Homepage = () => {
 							<SkillsSection />
 						</div>
 						<div className="homepage-projects">
-							<AllProjects />
+							<HomeProjects />
 						</div>
 
 						{/* <div className="homepage-after-title"> */}
@@ -194,6 +196,7 @@ const Homepage = () => {
 					</div>
 				</div>
 			</div>
+			<UpIcon />
 		</React.Fragment>
 	);
 };

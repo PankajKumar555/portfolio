@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
-import { useNavigate } from "react-router-dom";
+// import { useNavigate } from "react-router-dom";
 
 const cardWidth = 350;
 const borderRadius = 8;
@@ -53,6 +53,17 @@ const Description = styled.span`
 	display: block;
 	font-size: 0.875em;
 	color: #999999;
+	transition: ${transition};
+	transition-delay: 0.04s;
+	min-height: 4rem;
+	height: 4rem;
+	margin-top: 0.5rem;
+`;
+
+const TechStack = styled.span`
+	display: block;
+	font-size: 0.875em;
+	color: rgb(87, 86, 86);
 	transition: ${transition};
 	transition-delay: 0.04s;
 `;
@@ -116,24 +127,37 @@ const Style = styled.button`
 	}
 `;
 
-const Card = ({ hexa, title, description, image, linkText }) => {
-	const navigate = useNavigate();
+const Card = ({ hexa, title, description, image, linkText, link, tech }) => {
+	// const navigate = useNavigate();
 	return (
 		<Style>
 			<Screenshot image={image} />
 			<Content>
 				<Title>{title}</Title>
 				<Description>{description}</Description>
+				{tech && (
+					<TechStack>
+						<span style={{ fontWeight: "bold" }}>TechStack: </span>
+						{tech}
+					</TechStack>
+				)}
 				<BottomBar background={hexa} />
-				<div
-					className="project-link"
-					onClick={() => navigate("/projects")}
+				<a
+					href={link}
+					target="_blank"
+					rel="noreferrer"
+					style={{ textDecoration: "none" }}
 				>
-					<div className="project-link-icon">
-						<FontAwesomeIcon icon={faLink} />
+					<div
+						className="project-link"
+						// onClick={() => navigate("/projects")}
+					>
+						<div className="project-link-icon">
+							<FontAwesomeIcon icon={faLink} />
+						</div>
+						<div className="project-link-text">{linkText}</div>
 					</div>
-					<div className="project-link-text">{linkText}</div>
-				</div>
+				</a>
 			</Content>
 		</Style>
 	);

@@ -1,10 +1,15 @@
 import React from "react";
 import INFO from "../../data/user";
 import "./styles/allProjects.css";
-import { Box, Grid, Typography } from "@mui/material";
+import { Box, Button, Grid, Typography } from "@mui/material";
 import Card from "./Card";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import { useNavigate } from "react-router-dom";
+import "./styles/homeProjects.css";
 
-const AllProjects = () => {
+const HomeProjects = () => {
+	const navigate = useNavigate();
+
 	const generateColor = (index) => {
 		const hue = (index * 137) % 360; // Multiply index by a prime number to spread hues
 		return `hsl(${hue}, 70%, 50%)`; // Use HSL for vibrant, unique colors
@@ -38,7 +43,7 @@ const AllProjects = () => {
 					justifyContent: "center",
 				}}
 			>
-				{INFO.projects.map((project, index) => (
+				{INFO.homeProjects.map((project, index) => (
 					<Grid
 						item
 						xs={12}
@@ -56,13 +61,21 @@ const AllProjects = () => {
 							image={project.logo}
 							linkText={project.linkText}
 							link={project.link}
-							tech={project.tech}
 						/>
 					</Grid>
 				))}
 			</Grid>
+			<Button
+				variant="contained"
+				endIcon={<KeyboardArrowDownIcon className="animated-icon" />}
+				color="success"
+				sx={{ textTransform: "capitalize", marginTop: "2rem" }}
+				onClick={() => navigate("/projects")}
+			>
+				All Projects
+			</Button>
 		</Box>
 	);
 };
 
-export default AllProjects;
+export default HomeProjects;

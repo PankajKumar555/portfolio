@@ -1,0 +1,15 @@
+@keyframes moveIcon {
+	0% {
+		transform: translateY(0);
+	}
+	50% {
+		transform: translateY(4px); /* Moves down */
+	}
+	100% {
+		transform: translateY(0); /* Returns to top */
+	}
+}
+
+.animated-icon {
+	animation: moveIcon 1.5s ease-in-out infinite; /* Animation duration and infinite loop */
+}

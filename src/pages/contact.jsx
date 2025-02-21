@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/contact.css";
+import { UpIcon } from "../components/common/upIcon";
 
 const Contact = () => {
 	useEffect(() => {
@@ -39,7 +40,10 @@ const Contact = () => {
 					</div>
 
 					<div className="contact-container">
-						<div className="title contact-title">
+						<div
+							className="title contact-title"
+							style={{ width: "100%", textAlign: "center" }}
+						>
 							Let's Get in Touch: Ways to Connect with Me
 						</div>
 
@@ -84,6 +88,7 @@ const Contact = () => {
 					</div>
 				</div>
 			</div>
+			<UpIcon />
 		</React.Fragment>
 	);
 };

@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/projects.css";
+import { UpIcon } from "../components/common/upIcon";
 
 const Projects = () => {
 	useEffect(() => {
@@ -38,12 +39,18 @@ const Projects = () => {
 						</div>
 					</div>
 					<div className="projects-container">
-						<div className="title projects-title">
+						<div
+							className="title projects-title"
+							style={{ width: "100%", textAlign: "center" }}
+						>
 							Things I’ve made trying to put my dent in the
 							universe.
 						</div>
 
-						<div className="subtitle projects-subtitle">
+						<div
+							className="subtitle projects-subtitle"
+							style={{ width: "100%" }}
+						>
 							I've worked on a variety of projects over the years
 							and I'm proud of the progress I've made. Many of
 							these projects are open-source and available for
@@ -55,6 +62,7 @@ const Projects = () => {
 							learn and grow, and I'm always open to new ideas and
 							feedback.
 						</div>
+						<br />
 
 						<div className="projects-list">
 							<AllProjects />
@@ -65,6 +73,7 @@ const Projects = () => {
 					</div>
 				</div>
 			</div>
+			<UpIcon />
 		</React.Fragment>
 	);
 };

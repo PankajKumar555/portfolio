@@ -10,6 +10,7 @@ import INFO from "../data/user";
 import SEO from "../data/seo";
 
 import "./styles/about.css";
+import { UpIcon } from "../components/common/upIcon";
 
 const About = () => {
 	useEffect(() => {
@@ -75,6 +76,7 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			<UpIcon />
 		</React.Fragment>
 	);
 };
