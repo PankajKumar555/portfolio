@@ -1,0 +1,32 @@
+.toggle-button-item {
+	padding: 8px 16px;
+	/*background-color: #ccc;*/
+	border: none;
+	cursor: pointer;
+	z-index: 3;
+	margin: auto;
+}
+.toggle-button-item:hover {
+	background-color: rgba(197, 192, 192, 0.377);
+	border-radius: 25px;
+	width: -webkit-fill-available;
+}
+
+.toggle-button-item.active:hover {
+	background-color: unset;
+}
+
+.toggle-button-item.active {
+	color: white;
+}
+
+@media (max-width: 600px) {
+	.toggle-button-item {
+		font-size: 9px !important;
+	}
+}
+@media (max-width: 900px) {
+	.toggle-button-item {
+		font-size: 12px;
+	}
+}

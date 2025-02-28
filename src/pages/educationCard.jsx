@@ -68,8 +68,19 @@ const EducationCard = ({
 				<Typography variant="body1" color="text.secondary">
 					<strong>Percentage:</strong> {percentage}%
 				</Typography>
-				<Box sx={{ marginTop: 1, textAlign: "left" }}>
-					<Link
+				<Box
+					sx={{
+						marginTop: 1,
+						textAlign: "left",
+						display: "inline-flex",
+						alignItems: "center",
+						textDecoration: "none",
+						color: "primary.main",
+						transition: "color 0.2s",
+						"&:hover": { color: "primary.dark" },
+					}}
+				>
+					{/* <Link
 						href={degreeUrl}
 						target="_blank"
 						sx={{
@@ -80,14 +91,14 @@ const EducationCard = ({
 							transition: "color 0.2s",
 							"&:hover": { color: "primary.dark" },
 						}}
-					>
-						<IconButton>
-							<FontAwesomeIcon icon={faLink} fontSize="medium" />
-						</IconButton>
-						<Typography variant="body2" sx={{ marginLeft: 0.5 }}>
-							View Certificate
-						</Typography>
-					</Link>
+					> */}
+					<IconButton>
+						<FontAwesomeIcon icon={faLink} fontSize="medium" />
+					</IconButton>
+					<Typography variant="body2" sx={{ marginLeft: 0.5 }}>
+						View Certificate
+					</Typography>
+					{/* </Link> */}
 				</Box>
 			</CardContent>
 		</Card>

@@ -1,0 +1,116 @@
+/* Base styles for certification page */
+.certification-page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px;
+}
+
+/* Certification card container */
+.certificate-card {
+	width: 50%;
+	margin-bottom: 20px;
+	transition: transform 0.3s ease-in-out;
+}
+
+/* Certificate hover effect */
+.certificate-container {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.certificate-image-container {
+	position: relative;
+	width: 100%;
+	height: auto;
+	transition: transform 0.5s;
+}
+
+.certificate-image {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.certificate-details {
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background: rgba(0, 0, 0, 0.5);
+	color: white;
+	opacity: 0;
+	border-radius: 8px;
+	padding: 10px;
+	transition: opacity 0.3s ease-in-out;
+}
+
+.certificate-container:hover .certificate-details {
+	opacity: 1;
+}
+
+.certificate-container:hover .certificate-image {
+	opacity: 0;
+}
+
+/* Small certificate card layout */
+.certificate-row {
+	display: flex;
+	gap: 20px;
+	margin-top: 20px;
+}
+
+.certificate-card-small {
+	width: 30%;
+	cursor: pointer;
+	transition: transform 0.3s ease-in-out;
+}
+
+.certificate-small {
+	position: relative;
+}
+
+.certificate-image-small {
+	width: 100%;
+	height: auto;
+	border-radius: 8px;
+}
+
+/* Expanding effect on click */
+.certificate-card-small.large {
+	transform: scale(1.5);
+	z-index: 10;
+}
+
+/* Map Section */
+.map-section {
+	width: 100%;
+	margin-top: 40px;
+	text-align: center;
+}
+
+.map-title {
+	margin-bottom: 20px;
+}
+
+/* For responsive design */
+@media (max-width: 768px) {
+	.certificate-card {
+		width: 90%;
+	}
+
+	.certificate-row {
+		flex-direction: column;
+	}
+
+	.certificate-card-small {
+		width: 100%;
+	}
+}
