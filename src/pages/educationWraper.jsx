@@ -42,7 +42,7 @@ const EducationWraper = () => {
 		// Set a timeout to delay the initial update
 		const timer = setTimeout(() => {
 			updateWidth();
-		}, 1000);
+		}, 100);
 
 		// Update on resize
 		const handleResize = () => {

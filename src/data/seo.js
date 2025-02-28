@@ -2,36 +2,56 @@ const SEO = [
 	{
 		page: "home",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I am a frontend developer specializing in building intuitive, responsive, and high-performance web applications using modern technologies like React, Next.js, and Material-UI.",
+		keywords: ["Frontend Developer", "React", "Next.js", "Web Development"],
 	},
 
 	{
 		page: "about",
 		description:
-			"I am a backend developer with expertise in Node.js. I have experience in building scalable, secure and reliable web applications using various frameworks and technologies.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"As a frontend developer, I have a passion for crafting elegant user interfaces and seamless user experiences. I work with React, Next.js, and other modern web technologies to build visually appealing applications.",
+		keywords: [
+			"Frontend Engineer",
+			"UI/UX",
+			"JavaScript",
+			"TypeScript",
+			"Next.js",
+		],
 	},
 
 	{
 		page: "articles",
 		description:
-			"Chronological collection of my long-form thoughts on programming, leadership, product design, and more.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Explore my articles on frontend development, UI/UX best practices, JavaScript, React performance optimization, and industry trends.",
+		keywords: [
+			"Frontend Blog",
+			"React Tips",
+			"UI/UX Design",
+			"Web Performance",
+		],
 	},
 
 	{
 		page: "projects",
 		description:
-			"I've worked on a variety of projects over the years and I'm proud of the progress I've made. Many of these projects are open-source and available for others to explore and contribute to.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"I have built and contributed to various frontend projects, ranging from small UI components to full-scale web applications using React, Next.js, and Tailwind CSS.",
+		keywords: [
+			"React Projects",
+			"Next.js Applications",
+			"Frontend Portfolio",
+			"Web Apps",
+		],
 	},
 
 	{
 		page: "contact",
 		description:
-			"If you're interested in collaborating on a project, feel free to reach out to me. I'm always open to new ideas and opportunities.",
-		keywords: ["Tharindu", "Tharindu N", "Tharindu Nayanajith"],
+			"Interested in working together? Let's connect! I'm open to freelance projects, collaborations, and discussions about modern web development.",
+		keywords: [
+			"Contact Frontend Developer",
+			"Hire React Developer",
+			"Freelance Web Developer",
+		],
 	},
 ];
 

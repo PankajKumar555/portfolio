@@ -9,6 +9,7 @@ import Notfound from "./pages/404";
 import { TRACKING_ID } from "./data/tracking";
 import "./app.css";
 import EducationWraper from "./pages/educationWraper";
+import Login from "./pages/Login";
 
 function App() {
 	useEffect(() => {
@@ -26,6 +27,7 @@ function App() {
 				{/* <Route path="/articles" element={<Articles />} /> */}
 				<Route path="/education" element={<EducationWraper />} />
 				<Route path="/contact" element={<Contact />} />
+				<Route path="/login" element={<Login />} />
 				<Route path="*" element={<Notfound />} />
 			</Routes>
 		</div>

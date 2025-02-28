@@ -1,14 +1,12 @@
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope, faMobile } from "@fortawesome/free-solid-svg-icons";
 import {
 	faFreeCodeCamp,
 	faGithub,
 	faLinkedin,
 } from "@fortawesome/free-brands-svg-icons";
-
 import INFO from "../../data/user";
-
 import "./styles/socials.css";
 
 const Socials = () => {
@@ -71,6 +69,16 @@ const Socials = () => {
 
 						<div className="social-text">{INFO.main.email}</div>
 					</a>
+				</div>
+			</div>
+
+			<div className="phone">
+				<div className="phone-wrapper">
+					<div className="social-icon">
+						<FontAwesomeIcon icon={faMobile} />
+					</div>
+
+					<div className="social-text">{INFO.main.phone}</div>
 				</div>
 			</div>
 		</div>

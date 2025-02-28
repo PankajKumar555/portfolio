@@ -3,6 +3,7 @@ const INFO = {
 		title: "Reactfolio by Pankaj Kumar",
 		name: "Pankaj Kumar",
 		email: "pankajsing555@gmail.com",
+		phone: "8384064378",
 		logo: "../logo.png",
 	},
 
