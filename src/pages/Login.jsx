@@ -16,12 +16,12 @@ const Login = () => {
 	}, []);
 
 	const adminEmail = "pankajsing555@gmail.com";
-	const adminPassword = btoa("1234"); // "MTIzNA=="
+	const adminPassword = btoa("Pankaj@295073");
 
 	const [loading, setLoading] = useState(false);
 	const [formData, setFormData] = useState({ email: "", password: "" });
 	const [isLoggedIn, setIsLoggedIn] = useState(
-		sessionStorage.getItem("authenticated") === "true"
+		sessionStorage.getItem("authenticated") === adminPassword
 	);
 	const navigate = useNavigate();
 
@@ -43,7 +43,7 @@ const Login = () => {
 		if (formData.email === adminEmail) {
 			const encodedPassword = btoa(formData.password);
 			if (encodedPassword === adminPassword) {
-				sessionStorage.setItem("authenticated", "true");
+				sessionStorage.setItem("authenticated", encodedPassword);
 				setIsLoggedIn(true);
 				toast.success("Login successful!");
 				navigate("/");

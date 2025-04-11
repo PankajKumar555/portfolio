@@ -6,6 +6,10 @@ import { Button } from "@mui/material";
 
 const NavBar = (props) => {
 	const { active } = props;
+	const adminPassword = btoa("Pankaj@295073");
+
+	const isLoggedIn =
+		sessionStorage.getItem("authenticated") === adminPassword;
 
 	return (
 		<React.Fragment>
@@ -67,6 +71,17 @@ const NavBar = (props) => {
 							>
 								<Link to="/login">Login</Link>
 							</li>
+							{isLoggedIn && (
+								<li
+									className={
+										active === "admin"
+											? "nav-item active"
+											: "nav-item"
+									}
+								>
+									<Link to="/admin">Admin</Link>
+								</li>
+							)}
 						</ul>
 					</div>
 					<div
