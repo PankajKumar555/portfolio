@@ -72,6 +72,7 @@
 @media (max-width: 1024px) {
 	.about-logo {
 		z-index: 100;
+		top: 7vh;
 	}
 
 	.about-main {
@@ -108,7 +109,7 @@
 
 @media (max-width: 600px) {
 	.about-container {
-		padding-top: 60px;
+		padding-top: 100px;
 	}
 
 	.about-image-container {

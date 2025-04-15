@@ -6,7 +6,6 @@ import {
 	Typography,
 	Box,
 	IconButton,
-	Link,
 } from "@mui/material";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
@@ -18,7 +17,7 @@ const EducationCard = ({
 	passingYear,
 	percentage,
 	institutePhoto,
-	degreeUrl,
+	// degreeUrl,
 }) => {
 	return (
 		<Card

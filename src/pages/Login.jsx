@@ -27,7 +27,7 @@ const Login = () => {
 
 	useEffect(() => {
 		if (isLoggedIn) {
-			setIsLoggedIn(true); // Redirect if already logged in
+			setIsLoggedIn(true);
 		}
 	}, [isLoggedIn, navigate]);
 

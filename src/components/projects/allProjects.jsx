@@ -13,10 +13,6 @@ const AllProjects = () => {
 	return (
 		<Box
 			sx={{
-				// backgroundColor: "#000", // Dark background
-				// color: "#fff",
-				// minHeight: "100vh",
-				// padding: "40px",
 				textAlign: "center",
 			}}
 		>
@@ -28,7 +24,7 @@ const AllProjects = () => {
 			</Typography>
 			<br />
 			<Grid
-				container
+				item
 				xs={12}
 				sm={12}
 				md={12}
@@ -50,7 +46,7 @@ const AllProjects = () => {
 						sx={{ textAlign: "center" }}
 					>
 						<Card
-							hexa={generateColor(index)} // Dynamically generate a unique color
+							hexa={generateColor(index)}
 							title={project.title}
 							description={project.description}
 							image={project.logo}

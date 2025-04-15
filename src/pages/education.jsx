@@ -8,7 +8,7 @@ const Education = () => {
 	return (
 		<React.Fragment>
 			<Grid
-				container
+				item
 				xs={12}
 				sm={10}
 				md={10}

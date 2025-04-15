@@ -24,10 +24,13 @@
 
 @media (max-width: 600px) {
 	.projects-container {
-		padding-top: 60px;
+		padding-top: 100px;
 	}
 
 	.projects-project {
 		width: calc(100% / 2);
+	}
+	.projects-logo {
+		top: 7vh;
 	}
 }

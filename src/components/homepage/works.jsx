@@ -1,8 +1,5 @@
 import React from "react";
-import { faBriefcase } from "@fortawesome/free-solid-svg-icons";
-
 import Card from "../common/card";
-
 import "./styles/works.css";
 import { Box, Divider, Typography } from "@mui/material";
 
@@ -20,8 +17,6 @@ const Works = () => {
 				Work Experience
 			</Typography>
 			<Card
-				// icon={faBriefcase}
-				// title="Work"
 				body={
 					<div className="works-body" style={{ paddingTop: "0px" }}>
 						<div className="works-body-box">

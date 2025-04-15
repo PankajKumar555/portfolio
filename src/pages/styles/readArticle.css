@@ -66,3 +66,9 @@
 	font-family: system-ui;
 	color: #52525b;
 }
+
+@media (max-width: 600px) {
+	.read-article-logo {
+		top: 7vh;
+	}
+}

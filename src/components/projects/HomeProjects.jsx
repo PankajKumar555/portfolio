@@ -1,27 +1,23 @@
 import React from "react";
 import INFO from "../../data/user";
-import "./styles/allProjects.css";
 import { Box, Button, Grid, Typography } from "@mui/material";
 import Card from "./Card";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { useNavigate } from "react-router-dom";
+import "./styles/allProjects.css";
 import "./styles/homeProjects.css";
 
 const HomeProjects = () => {
 	const navigate = useNavigate();
 
 	const generateColor = (index) => {
-		const hue = (index * 137) % 360; // Multiply index by a prime number to spread hues
-		return `hsl(${hue}, 70%, 50%)`; // Use HSL for vibrant, unique colors
+		const hue = (index * 137) % 360;
+		return `hsl(${hue}, 70%, 50%)`;
 	};
 
 	return (
 		<Box
 			sx={{
-				// backgroundColor: "#000", // Dark background
-				// color: "#fff",
-				// minHeight: "100vh",
-				// padding: "40px",
 				textAlign: "center",
 			}}
 		>
@@ -33,7 +29,7 @@ const HomeProjects = () => {
 			</Typography>
 			<br />
 			<Grid
-				container
+				item
 				xs={12}
 				sm={12}
 				md={12}
@@ -55,7 +51,7 @@ const HomeProjects = () => {
 						sx={{ textAlign: "center" }}
 					>
 						<Card
-							hexa={generateColor(index)} // Dynamically generate a unique color
+							hexa={generateColor(index)}
 							title={project.title}
 							description={project.description}
 							image={project.logo}

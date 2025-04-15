@@ -2,7 +2,7 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import Education from "./education";
 import Certification from "./certification";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import NavBar from "../components/common/navBar";
 import Footer from "../components/common/footer";
 import Logo from "../components/common/logo";
@@ -38,20 +38,15 @@ const EducationWraper = () => {
 
 	useLayoutEffect(() => {
 		const updateWidth = () => setActiveWidth(calcWidth(2));
-
-		// Set a timeout to delay the initial update
 		const timer = setTimeout(() => {
 			updateWidth();
 		}, 100);
-
-		// Update on resize
 		const handleResize = () => {
 			clearTimeout(timer);
 			setTimeout(() => {
 				updateWidth();
 			}, 1000);
 		};
-
 		window.addEventListener("resize", handleResize);
 		return () => {
 			clearTimeout(timer);

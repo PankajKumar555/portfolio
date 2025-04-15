@@ -6,8 +6,8 @@ export const educationDetails = [
 		admissionYear: 2013,
 		passingYear: 2016,
 		percentage: 71,
-		institutePhoto: "/ipu.jpeg", // Replace with actual image URL
-		degreeUrl: "https://example.com/degree-link", // Replace with actual degree link
+		institutePhoto: "/ipu.jpeg",
+		degreeUrl: "https://example.com/degree-link",
 	},
 	{
 		instituteName: "Pusa PolyTechnic",
@@ -15,8 +15,8 @@ export const educationDetails = [
 		admissionYear: 2009,
 		passingYear: 2012,
 		percentage: 65,
-		institutePhoto: "/pusa.jpg", // Replace with actual image URL
-		degreeUrl: "https://example.com/certificate-link", // Replace with actual certificate link
+		institutePhoto: "/pusa.jpg",
+		degreeUrl: "https://example.com/certificate-link",
 	},
 	{
 		instituteName: "National Institute of Open Schooling (NIOS)",
@@ -24,8 +24,8 @@ export const educationDetails = [
 		admissionYear: 2010,
 		passingYear: 2011,
 		percentage: 45,
-		institutePhoto: "/nios.jpg", // Replace with actual image URL
-		degreeUrl: "https://example.com/certificate-link", // Replace with actual certificate link
+		institutePhoto: "/nios.jpg",
+		degreeUrl: "https://example.com/certificate-link",
 	},
 	{
 		instituteName: "Central Board of Secondary Education (CBSE)",
@@ -33,8 +33,8 @@ export const educationDetails = [
 		admissionYear: 2008,
 		passingYear: 2009,
 		percentage: 65,
-		institutePhoto: "/cbse.jpg", // Replace with actual image URL
-		degreeUrl: "https://example.com/certificate-link", // Replace with actual certificate link
+		institutePhoto: "/cbse.jpg",
+		degreeUrl: "https://example.com/certificate-link",
 	},
 ];
 
@@ -44,9 +44,9 @@ export const certificationDetails = [
 		course: "Web Development",
 		duration: "6 Month's",
 		grade: "A",
-		Certificate_No: "CCN-97391619", // Replace with actual image URL
+		Certificate_No: "CCN-97391619",
 		LiveUrl:
-			"https://drive.google.com/file/d/16jRIOmLQYVg-rFGrbxnKDXMVK0Dp9Xyt/view?usp=drive_link", // Replace with actual degree link
+			"https://drive.google.com/file/d/16jRIOmLQYVg-rFGrbxnKDXMVK0Dp9Xyt/view?usp=drive_link",
 		image: "/certificate/croma_web.png",
 	},
 	{
@@ -54,8 +54,8 @@ export const certificationDetails = [
 		course: "SolidWorks",
 		duration: "2 Month's",
 		grade: "A",
-		Certificate_No: "CCN-97391619", // Replace with actual image URL
-		LiveUrl: "https://example.com/degree-link", // Replace with actual degree link
+		Certificate_No: "CCN-97391619",
+		LiveUrl: "https://example.com/degree-link",
 		image: "/certificate/udemy.png",
 	},
 	{
@@ -63,9 +63,9 @@ export const certificationDetails = [
 		course: "Responsive Web Design",
 		duration: "300 hours",
 		grade: "A",
-		Certificate_No: "NA", // Replace with actual image URL
+		Certificate_No: "NA",
 		LiveUrl:
-			"https://www.freecodecamp.org/certification/pankajkumar2016/responsive-web-design", // Replace with actual degree link
+			"https://www.freecodecamp.org/certification/pankajkumar2016/responsive-web-design",
 		image: "/certificate/free_code_camp_rwd.png",
 	},
 	{
@@ -73,9 +73,9 @@ export const certificationDetails = [
 		course: "JavaScript Algorithms and Data Structures",
 		duration: "300 hours",
 		grade: "A",
-		Certificate_No: "NA", // Replace with actual image URL
+		Certificate_No: "NA",
 		LiveUrl:
-			"https://www.freecodecamp.org/certification/pankajkumar2016/javascript-algorithms-and-data-structures", // Replace with actual degree link
+			"https://www.freecodecamp.org/certification/pankajkumar2016/javascript-algorithms-and-data-structures",
 		image: "/certificate/free_code_camp_js.png",
 	},
 	{
@@ -83,9 +83,9 @@ export const certificationDetails = [
 		course: "Front End Web Development Course",
 		duration: "17 hours",
 		grade: "A",
-		Certificate_No: "UC-79deb7a4-74c1-488f-aab2-911b47238178", // Replace with actual image URL
+		Certificate_No: "UC-79deb7a4-74c1-488f-aab2-911b47238178",
 		LiveUrl:
-			"https://www.udemy.com/certificate/UC-79deb7a4-74c1-488f-aab2-911b47238178/", // Replace with actual degree link
+			"https://www.udemy.com/certificate/UC-79deb7a4-74c1-488f-aab2-911b47238178/",
 		image: "/certificate/udemy.png",
 	},
 ];

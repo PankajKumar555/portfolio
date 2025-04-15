@@ -13,10 +13,6 @@ const SkillsSection = () => {
 	return (
 		<Box
 			sx={{
-				// backgroundColor: "#000", // Dark background
-				// color: "#fff",
-				// minHeight: "100vh",
-				// padding: "40px",
 				textAlign: "center",
 			}}
 		>
@@ -32,7 +28,6 @@ const SkillsSection = () => {
 					<Grid item xs={6} sm={4} md={3} lg={2} key={index}>
 						<Card
 							sx={{
-								// backgroundColor: "#111", // Card background
 								boxShadow: "0 2px 6px rgba(0,0,0,0.2)",
 								textAlign: "center",
 								padding: "10px",

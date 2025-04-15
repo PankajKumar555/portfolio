@@ -7,10 +7,10 @@ import Projects from "./pages/projects";
 import Contact from "./pages/contact";
 import Notfound from "./pages/404";
 import { TRACKING_ID } from "./data/tracking";
-import "./app.css";
 import EducationWraper from "./pages/educationWraper";
 import Login from "./pages/Login";
 import Admin from "./pages/admin";
+import "./app.css";
 
 function App() {
 	useEffect(() => {
@@ -25,7 +25,6 @@ function App() {
 				<Route path="/" element={<Homepage />} />
 				<Route path="/about" element={<About />} />
 				<Route path="/projects" element={<Projects />} />
-				{/* <Route path="/articles" element={<Articles />} /> */}
 				<Route path="/education" element={<EducationWraper />} />
 				<Route path="/contact" element={<Contact />} />
 				<Route path="/login" element={<Login />} />

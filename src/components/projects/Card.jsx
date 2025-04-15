@@ -3,7 +3,6 @@ import styled from "styled-components";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLink } from "@fortawesome/free-solid-svg-icons";
 import "./styles/project.css";
-// import { useNavigate } from "react-router-dom";
 
 const cardWidth = 350;
 const borderRadius = 8;
@@ -128,7 +127,6 @@ const Style = styled.button`
 `;
 
 const Card = ({ hexa, title, description, image, linkText, link, tech }) => {
-	// const navigate = useNavigate();
 	return (
 		<Style>
 			<Screenshot image={image} />
@@ -148,10 +146,7 @@ const Card = ({ hexa, title, description, image, linkText, link, tech }) => {
 					rel="noreferrer"
 					style={{ textDecoration: "none" }}
 				>
-					<div
-						className="project-link"
-						// onClick={() => navigate("/projects")}
-					>
+					<div className="project-link">
 						<div className="project-link-icon">
 							<FontAwesomeIcon icon={faLink} />
 						</div>

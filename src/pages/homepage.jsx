@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Helmet } from "react-helmet";
+import { Helmet } from "react-helmet-async";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -12,13 +12,12 @@ import Logo from "../components/common/logo";
 import Footer from "../components/common/footer";
 import NavBar from "../components/common/navBar";
 import Works from "../components/homepage/works";
-import AllProjects from "../components/projects/allProjects";
 import INFO from "../data/user";
 import SEO from "../data/seo";
 import SkillsSection from "../components/skill/Skill";
-import "./styles/homepage.css";
 import HomeProjects from "../components/projects/HomeProjects";
 import { UpIcon } from "../components/common/upIcon";
+import "./styles/homepage.css";
 
 const Homepage = () => {
 	const [stayLogo, setStayLogo] = useState(false);
@@ -58,7 +57,7 @@ const Homepage = () => {
 	const logoStyle = {
 		display: "flex",
 		position: stayLogo ? "fixed" : "relative",
-		top: stayLogo ? "3vh" : "auto",
+		top: stayLogo ? "7vh" : "auto",
 		zIndex: 999,
 		border: stayLogo ? "1px solid white" : "none",
 		borderRadius: stayLogo ? "50%" : "none",
@@ -141,13 +140,10 @@ const Homepage = () => {
 									className="homepage-social-icon"
 								/>
 							</a>
-							<a
-								href={INFO.socials.mobile}
-								target="_blank"
-								rel="noreferrer"
-							>
+							<a href={`tel:${INFO.socials.mobile}`}>
 								<SmartphoneIcon className="homepage-social-icon" />
 							</a>
+
 							<a
 								href={`mailto:${INFO.main.email}`}
 								target="_blank"
@@ -166,30 +162,9 @@ const Homepage = () => {
 						<div className="homepage-projects">
 							<HomeProjects />
 						</div>
-
-						{/* <div className="homepage-after-title"> */}
-						{/* <div className="homepage-articles">
-								{myArticles.map((article, index) => (
-									<div
-										className="homepage-article"
-										key={(index + 1).toString()}
-									>
-										<Article
-											key={(index + 1).toString()}
-											date={article().date}
-											title={article().title}
-											description={article().description}
-											link={"/article/" + (index + 1)}
-										/>
-									</div>
-								))}
-							</div> */}
-
 						<div className="homepage-works">
 							<Works />
 						</div>
-						{/* </div> */}
-
 						<div className="page-footer">
 							<Footer />
 						</div>
