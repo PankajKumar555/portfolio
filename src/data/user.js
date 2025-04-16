@@ -85,7 +85,7 @@ const INFO = {
 			title: "The Whole Sale Street",
 			description:
 				"'The Whole Sale Street' is an e-commerce platform built with React, Material-UI (MUI), and Redux for state management, offering a seamless shopping experience.",
-			logo: "/project/salontym.png",
+			logo: "/project/whole-sale-street.png",
 			linkText: "View Project",
 			link: "https://nikhil-app-ruddy.vercel.app/",
 			tech: "Html, Css, JavaScript, React Js, Material UI, React-BootStrap, Redux",
