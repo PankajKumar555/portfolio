@@ -1,6 +1,6 @@
 const INFO = {
 	main: {
-		title: "Reactfolio by Pankaj Kumar",
+		title: "Portfolio by Pankaj Kumar",
 		name: "Pankaj Kumar",
 		email: "pankajsing555@gmail.com",
 		phone: "8384064378",
