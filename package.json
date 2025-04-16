@@ -1,11 +1,11 @@
 {
-	"name": "reactfolio",
+	"name": "portfolio",
 	"version": "1.1.0",
-	"description": "Personal portfolio template built using Reactjs",
+	"description": "Personal portfolio pankaj kumar",
 	"author": {
-		"name": "Tharindu N. Madhusanka",
+		"name": "Pankaj Kumar",
 		"email": "mail@tharindu.dev",
-		"url": "https://tharindu.dev"
+		"url": "https://pankaj-kumar-portfolio.vercel.app"
 	},
 	"license": "MIT",
 	"private": true,
